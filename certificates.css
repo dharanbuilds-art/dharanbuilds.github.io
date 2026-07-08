@@ -1,0 +1,206 @@
+/*       ****************    ************    Certificates      ****************    ***************      */
+
+#certificates{
+    min-height: 100vh;
+    height: auto;
+    background-color: var(--bg--color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 8.3% 70px;
+}
+.cert-cnt{
+    width: 100%;
+}
+.cert-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.cert-card{
+    position: relative;
+    background-color: var(--second-bg--color);
+    border-radius: 12px;
+    padding: 30px 22px 22px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.06);
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+.cert-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.35);
+    border-color: var(--text--blue);
+}
+.cert-ribbon{
+    position: absolute;
+    top: -1px;
+    right: 18px;
+    background: linear-gradient(180deg, var(--text--blue), #0576a3);
+    color: #fff;
+    width: 34px;
+    padding: 6px 0 10px;
+    border-radius: 0 0 8px 8px;
+    font-size: 0.85rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%);
+}
+.cert-badge-icon{
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    background-color: var(--bg--color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cert-badge-icon i{
+    font-size: 1.8rem;
+    color: var(--text--blue);
+}
+.cert-info h3{
+    color: var(--text--white);
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+}
+.cert-issuer, .cert-date{
+    font-family: "Nunito", sans-serif;
+    color: var(--text--white);
+    opacity: 0.85;
+    font-size: 13px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+.cert-issuer i, .cert-date i{
+    color: var(--text--blue);
+    font-size: 12px;
+}
+.cert-view{
+    display: inline-block;
+    margin-top: 16px;
+    color: var(--text--blue);
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid var(--text--blue);
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+.cert-view:hover{
+    background-color: var(--text--blue);
+    color: var(--bg--color);
+}
+.cert-more{
+    text-align: center;
+    margin-top: 45px;
+}
+.cert-all-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text--white);
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background-color: var(--second-bg--color);
+    border: 1px solid var(--text--blue);
+    padding: 12px 28px;
+    border-radius: 30px;
+    transition: 0.35s ease;
+}
+.cert-all-btn i{
+    transition: transform 0.35s ease;
+}
+.cert-all-btn:hover{
+    background-color: var(--text--blue);
+    color: var(--bg--color);
+    box-shadow: 0 0 30px rgba(0, 171, 240, 0.4);
+}
+.cert-all-btn:hover i{
+    transform: translateX(5px);
+}
+
+@media (max-width: 1080px) {
+    .cert-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    #certificates{
+        padding: 100px 6% 50px;
+    }
+    .cert-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*       ****************    ************    Certificates Full Page      ****************    ***************      */
+
+.cert-page{
+    min-height: 100vh;
+    background-color: var(--bg--color);
+    padding: 60px 8.3% 35px;
+}
+.cert-page-heading{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.cert-page-heading h1{
+    color: var(--text--white);
+    font-size: 2.4rem;
+    margin-bottom: 0px;
+}
+.cert-page-heading h1 span{
+    color: var(--text--blue);
+}
+.cert-page-heading p{
+    font-family: "Nunito", sans-serif;
+    color: var(--text--white);
+    opacity: 0.7;
+    letter-spacing: 2px;
+}
+.cert-page-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.back-home{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text--blue);
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+    transition: 0.3s ease;
+}
+.back-home:hover{
+    gap: 14px;
+}
+
+@media (max-width: 1080px){
+    .cert-page-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 700px){
+    .cert-page{
+        padding: 100px 6% 60px;
+    }
+    .cert-page-grid{
+        grid-template-columns: 1fr;
+    }
+}

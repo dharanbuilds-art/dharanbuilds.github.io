@@ -1,0 +1,378 @@
+#contact{
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    height: auto;
+    background-color: var(--bg--color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px 0 60px;
+}
+.contact-deg{
+    height: 30px;
+    width: 150px;
+    margin-left: -20px;
+    margin-top: -210px;
+    transform: rotate(270deg);
+    font-family: "Nunito", sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    color: var(--text--white);
+}
+.lets-work{
+    width: 37%;
+    height: 70%;
+    margin-top: 0%;
+}
+.lets-work h1{
+    color: var(--text--white);
+    font-size: 2.5rem;
+    margin-left: -80px;
+}
+.lets-work p{
+    font-family: "Nunito", sans-serif;
+    color:var(--text--white);
+    margin-left: -75px;
+    line-height: 1.5;
+}
+.phone-dtl{
+    width: 40%;
+    height: 45px;
+    margin-top: 20px;
+    margin-left: -140px;
+    display: flex;
+}
+.phone-dtl .span{
+    width: 20%;
+    height: 95%;
+    border-radius: 4px;
+    background-color:var(--second-bg--color);
+}
+.phone-dtl .span i{
+    font-size: 1.2rem;
+    color: var(--icon--blue);
+    margin: 10px 0px 0px 8px;
+}
+.phone-dtl h4 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 14.5px;
+    color: var(--text--blue);
+    margin: 2px 0px 0px 16px;
+}
+.phone-dtl h3 {
+    font-size: 13px;
+    font-weight: 400;
+    margin: 2px 0px 0px 16px;
+    color: var(--text--white);
+}
+.phone-dtl h3 a{
+    color: var(--text--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.phone-dtl h3 a:hover{
+    color: var(--text--blue);
+}
+.social-buttons{
+    display: flex;
+    gap: 14px;
+    margin-top: 20px;
+    margin-left: -140px;
+}
+.social-btn{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 40%;
+    height: 45px;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: var(--second-bg--color);
+    color: var(--text--white);
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-size: 13px;
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+}
+.social-btn i{
+    color: var(--icon--blue);
+    font-size: 1.1rem;
+}
+.social-btn:hover{
+    border-color: var(--icon--blue);
+    color: var(--icon--blue);
+    transform: translateY(-3px);
+}
+.material-symbols-outlined{
+    color: var(--text--blue);
+    margin: 10px 10px;
+}
+.contact-me{
+    position: relative;
+    width: 40%;
+    height: auto;
+    border-radius: 16px;
+    background: linear-gradient(160deg, var(--second-bg--color) 0%, #2c2d2e 100%);
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 30px 30px 34px;
+    border: 1px solid rgba(0, 171, 240, 0.15);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(255,255,255,0.02) inset;
+    overflow: hidden;
+}
+.contact-me::before{
+    content: "";
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(circle, rgba(0, 171, 240, 0.28), transparent 70%);
+    pointer-events: none;
+}
+.contact-me::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--icon--blue), var(--text--blue), var(--icon--blue));
+    background-size: 200% 100%;
+    animation: contact-glow-line 4s linear infinite;
+}
+@keyframes contact-glow-line{
+    0%{ background-position: 0% 0; }
+    100%{ background-position: 200% 0; }
+}
+.contact-me h1{
+    position: relative;
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--text--white);
+    margin-top: 5px;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+}
+.contact-me h1 span{
+    color: var(--text--blue);
+}
+.contact-me .form-subtext{
+    position: relative;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    color: var(--text--white);
+    opacity: 0.65;
+    font-size: 13px;
+    margin-bottom: 26px;
+    letter-spacing: 0.5px;
+}
+.contact-me form{
+    position: relative;
+    text-align: center;
+}
+form .input-box{
+    display: flex;
+    gap: 16px;
+}
+.input-field{
+    position: relative;
+    flex: 1;
+}
+.input-field i{
+    position: absolute;
+    top: 38%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: var(--icon--blue);
+    font-size: 14px;
+    pointer-events: none;
+    transition: color 0.3s ease;
+}
+.textarea-field i{
+    top: 18px;
+    transform: none;
+}
+.item{
+    outline: none;
+    width: 100%;
+    padding: 12px 14px 12px 40px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    border: 1px solid rgba(255,255,255,0.06);
+    background-color: var(--bg--color);
+    margin-bottom: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.item::placeholder{
+    color: rgba(255,255,255,0.4);
+}
+.item:focus{
+    border-color: var(--icon--blue);
+    box-shadow: 0 0 0 3px rgba(0, 171, 240, 0.18);
+    background-color: #1f1f1f;
+}
+.item:focus + i,
+.input-field:focus-within i{
+    color: var(--text--white);
+}
+form .textarea-field .item{
+    resize: none;
+    padding-top: 14px;
+    min-height: 130px;
+}
+.contact-me .send-btn{
+    width: 40%;
+    margin-top: 4px;
+    border-radius: 0px;
+    letter-spacing: 1px;
+}
+.send-btn{
+    background:var(--text--white);
+    color: white;
+    position: relative;
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px ;
+    transition: 0.4s;
+}
+.send-btn:hover{
+    background: var(--icon--blue);
+    color: var(--icon--blue);
+    box-shadow: 0 0 10px var(--icon--blue);
+}
+.send-btn::before{
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background-color: var(--bg--color);
+}
+.send-btn span{
+    position: relative;
+    z-index: 1;
+}
+.send-btn i{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+.send-btn i::before{ 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background: var(--bg--color);
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.4s;
+}
+.send-btn:hover i::before{
+    width: 20px;
+    left: 20%;
+}
+.send-btn i::after{
+    content: ""; 
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 10px;
+    height: 4px;
+    background: var(--bg--color);
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.4s;
+}
+.send-btn:hover i::after{
+    width: 20px;
+    left: 80%;
+}
+
+/* ===================== Responsive: tablet ===================== */
+@media (max-width: 1080px){
+    #contact{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .contact-deg{
+        display: none;
+    }
+    .lets-work{
+        width: 44%;
+        margin-top: 0;
+    }
+    .lets-work h1,
+    .lets-work p,
+    .phone-dtl,
+    .social-buttons{
+        margin-left: 0;
+    }
+    .contact-me{
+        width: 46%;
+        margin-right: 0;
+    }
+}
+
+/* ===================== Responsive: mobile ===================== */
+@media (max-width: 768px){
+    #contact{
+        flex-direction: column;
+        padding: 90px 6% 50px;
+        gap: 40px;
+    }
+    .lets-work,
+    .contact-me{
+        width: 100%;
+    }
+    .lets-work h1{
+        font-size: 1.9rem;
+        text-align: center;
+    }
+    .lets-work p{
+        text-align: center;
+    }
+    .phone-dtl{
+        width: 100%;
+        margin-left: 0;
+    }
+    .social-buttons{
+        margin-left: 0;
+        width: 100%;
+    }
+    .social-btn{
+        width: 50%;
+    }
+    form .input-box{
+        flex-direction: column;
+        gap: 0;
+    }
+}
+@media (max-width: 480px){
+    .contact-me{
+        padding: 24px 18px 26px;
+    }
+    .contact-me h1{
+        font-size: 1.5rem;
+    }
+    .phone-dtl .span{
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+    }
+    .phone-dtl{
+        align-items: center;
+    }
+    .social-buttons{
+        flex-direction: column;
+    }
+    .social-btn{
+        width: 100%;
+    }
+}
